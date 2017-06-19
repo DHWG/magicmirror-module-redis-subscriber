@@ -1,0 +1,8 @@
+{
+  "name": "smartmirror-redis-subscriber",
+  "description": "SmartMirror Redis Topic Subscription Plugin",
+  "version": "0.0.1",
+  "dependencies": {
+    "redis": "^2.7.1"
+  }
+}
