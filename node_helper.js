@@ -13,7 +13,7 @@ module.exports = NodeHelper.create({
       case 'configure':
         self.config = payload;
         try {
-          self.redis = redis.createClient(/*self.config.redis*/);
+          self.redis = redis.createClient(self.config.redis);
           self.redis.on('message', (channel, message) => {
             self.handleMessage(channel, message);
           });
